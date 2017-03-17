@@ -1,0 +1,82 @@
+.sacola{
+    background: url(../img/sacola.png) no-repeat top right;
+    font-size: 14px;
+    padding-right: 35px;
+    text-align: right;
+    width: 140px;
+    padding-top: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+header{
+    position: relative;
+}
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.menu-opcoes ul li{
+    display: inline;
+    margin-left: 20px;
+    font-size: 15px;
+    /*codigo do menu de opcoes*/
+}
+.menu-cabecalho{
+    color: #003366;
+}
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+body {
+    color: #333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+}
+h1 {
+    background-image: url(../img/sobre-background.jpg);
+    padding: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+    border-bottom: 2px solid #333333;
+}
+p{
+    text-indent: 15px;    
+}
+figure { /*renderizando imagens*/
+    padding: 0 45px;
+    margin: 30px;
+    background-color: #f2eded;
+    border: 1px groove #ccc;
+    text-align: center;
+}
+figcaption{ /*ajustando a legenda*/
+    font-style: italic;
+    margin-top: 10px;
+}
+#centro-distribuicao {
+    
+    margin-left: auto; 
+    margin-right: auto;
+    width: 550px;
+}
+#familia-pelho {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+#rodape {
+    color: #777;
+    margin: 30px;
+    padding: 30px 0;
+}
+#rodape img{
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 94px;
+}
