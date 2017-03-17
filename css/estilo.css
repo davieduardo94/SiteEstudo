@@ -110,6 +110,9 @@ header {
 .novidades {
     float: left;
 }
+.novidades img {
+    border-radius: 50%;
+}
 .mais-vendidos {
     float: right;
 }
@@ -131,6 +134,9 @@ background-color: #f5dcdc;
 }
 .mais-vendidos {
     background-color: #dcdcf5
+}
+.mais-vendidos img {
+    border-radius: 80%;
 }
 .social ul {
     position: relative;
