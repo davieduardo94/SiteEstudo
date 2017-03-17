@@ -116,7 +116,9 @@ header {
 .mais-vendidos {
     float: right;
 }
-
+.mais-vendidos > h2 {
+    color: blue;
+}
 .painel h2 {
     font-size: 24px;
     font-weight: bold;
@@ -131,6 +133,9 @@ header {
 }
 .novidades {
 background-color: #f5dcdc;
+}
+.novidades > h2 {
+    color: blue;
 }
 .mais-vendidos {
     background-color: #dcdcf5
