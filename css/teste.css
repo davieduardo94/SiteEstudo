@@ -2,6 +2,65 @@
     margin: 0 auto;
     width: 940px;
 }
+header {
+    position: relative;
+}
+.imagem {
+    float: left
+}
+.sacola  {
+    background: url(../img/sacola.png) no-repeat top right;
+    font-size: 14px;
+    padding-right:35px;
+    text-align: right;
+    width: 140px;
+    
+}
+.sacola {
+    float: right;
+    top:0;
+    right: 0;
+    padding-top: 8px;
+}
+.menu-opcoes ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.menu-opcoes li {
+    float: left
+}
+.menu-opcoes li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu-opcoes li a:hover {
+    background-color: #111;
+}
+
+/*
+.menu-opcoes ul {
+    font-size: 15px;
+}
+.menu-opcoes ul li {
+    display: inline;
+    margin-left: 15px;
+}
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #dcdcdc;
+    padding: 10px;
+}
+.menu-opcoes li{
+    margin-inline-end: 15px;
+} */
 body {
     color: #333333;
     font-family: "Lucida Sans Unicode", "Lucida Grande" , sans-serif;
@@ -60,4 +119,25 @@ body {
 }
 #crossfade img.top:hover {
     opacity: 0;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.navbar li {
+    float: left;
+}
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 1px solid #dcdcdc;
+}
+.navbar li a:hover {
+    background-color: #111;
 }

@@ -1,34 +1,61 @@
-.sacola{
-    background: url(../img/sacola.png) no-repeat top right;
-    font-size: 14px;
-    padding-right: 35px;
-    text-align: right;
-    width: 140px;
-    padding-top: 8px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-header{
-    position: relative;
-}
-.menu-opcoes {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-.menu-opcoes ul li{
-    display: inline;
-    margin-left: 20px;
-    font-size: 15px;
-    /*codigo do menu de opcoes*/
-}
-.menu-cabecalho{
-    color: #003366;
-}
+
 .container {
     margin: 0 auto;
     width: 940px;
+}
+.imagem {
+    float: left
+}
+.sacola  {
+    background: url(../img/sacola.png) no-repeat top right;
+    font-size: 14px;
+    padding-right:35px;
+    text-align: right;
+    width: 140px;
+    
+}
+.sacola {
+    float: right;
+    top:0;
+    right: 0;
+    padding-top: 8px;
+}
+.menu-opcoes ul {
+    list-style: none;
+    margin: 5px auto auto 1px;;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ccc;
+}
+.menu-opcoes li {
+    float: left
+}
+.menu-opcoes li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 1px solid white;
+}
+.menu-opcoes li a:hover {
+    background-color: #111;
+}
+.menu-opcoes button {
+    font-size: 14px;
+    text-align: center;
+    float: right;
+}
+.btn-info {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    float: right;
+    width: 130px;
+    height: 55px;
+    background-color: #ccc;
+}
+.btn-info:hover {
+    background-color: #777;
 }
 body {
     color: #333333;
@@ -38,8 +65,9 @@ body {
     width: 940px;
 }
 h1 {
-    background-image: url(../img/sobre-background.jpg);
-    padding: 10px;
+    /*background-image: url(../img/sobre-background.jpg);*/
+    padding: 5px;
+    margin: inherit;
 }
 
 h2 {
