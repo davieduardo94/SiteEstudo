@@ -8,9 +8,7 @@
 .menu-opcoes ul {
     font-size: 15px;
 }
-.menu-opcoes a {
-    color: #003366;
-}
+
 body {
     color: #333333;
     font-family: "Lucida Sans Unicode", "Lucida Grande" , sans-serif;
@@ -25,6 +23,23 @@ body {
 .container {
     margin: 0 auto;
     width: 940px;
+}
+.cssfade {
+    position: relative;
+    display: inline-block;
+}
+.cssfade img {
+    position: absolute;
+    left: 0;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+.cssfade img.top:hover {
+    opacity: 0;
 }
 header {
     position: relative;
@@ -50,6 +65,9 @@ header {
     text-decoration: none;
      /*fim*/
 }
+.menu-opcoes a:active {
+    background-color: gray;
+}
 
 .busca,
 .menu-departamentos {
@@ -66,6 +84,9 @@ header {
 
 .menu-departamentos li:hover { /*personalizando o menu com hover 08/03 */
     background-color: #dcdcdc;
+}
+.menu-departamentos li:active {
+    background-color: gray;
 }
 .busca h2,
 .busca form,
@@ -96,9 +117,11 @@ header {
 }
 
 .painel {
-    margin: 10px 0;
+    margin: 175px 0 35px; /* margin alterado de 10 para 175px 0 35px p/ compatibiliadae */
     padding:  10px;
     width: 445px;
+    height: 420px; /* height adicionado para manter o layout */
+    
 }
 .painel li {
     display: inline-block;
@@ -106,9 +129,11 @@ header {
     width: 140px;
     margin: 2px;
     padding-bottom: 10px;
+    
 }
 .novidades {
     float: left;
+    clear: left; /* adicionado para alinhar o paineil mais vendidos*/
 }
 .novidades img {
     border-radius: 50%;
@@ -117,7 +142,7 @@ header {
     float: right;
 }
 .mais-vendidos > h2 {
-    color: blue;
+    color: #333;
 }
 .painel h2 {
     font-size: 24px;
@@ -135,7 +160,7 @@ header {
 background-color: #f5dcdc;
 }
 .novidades > h2 {
-    color: blue;
+    color: #333;
 }
 .mais-vendidos {
     background-color: #dcdcf5
