@@ -1,0 +1,63 @@
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+body {
+    color: #333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande" , sans-serif;
+    }
+.test li:first-child {
+    color: red;
+}
+.test li:last-child {
+    color: blue;
+}
+.test li:nth-child(3) {
+    color: yellow;
+}
+.test li:nth-child(2n) {
+    color: green;
+}
+.test li::nth-child(2n+1){
+    color: blue;
+}
+.test p:first-letter {
+    font-size: 200%;
+}
+.test p:first-line{
+    font-style: italic;
+}
+
+.test a:before {
+    content: '[';
+}
+.test a:after {
+    content: ']';
+}
+.seletores h2 ~p { /*seletor de irmãos, seleciona todas as tags p depois do H2*/
+    font-style: italic;
+}
+.seletores h2 + p { /* seletor de irmao adjacente pega a tag p logo apos h2 */
+    font-variant: small-caps;
+}
+.artic > h1 { /*pega o h1 principal filho de article */
+    color: blue;
+} 
+#crossfade {
+    position: relative;
+    height: 250px;
+    width: 300px;
+}
+#crossfade img {
+    position: absolute;
+    left: 0;
+    opacity: 1;
+    -webkit-transition: opacity 5s ease-in-out;
+    -moz-transition: opacity 5s ease-in-out;
+    -o-transition: opacity 5s ease-in-out;
+    -ms-transition: opacity 5s ease-in-out;
+    transition: opacity 5s ease-in-out;
+}
+#crossfade img.top:hover {
+    opacity: 0;
+}
