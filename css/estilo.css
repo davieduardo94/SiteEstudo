@@ -1,3 +1,6 @@
+header {
+    position: relative;
+}
 .sacola {
     background:  url(../img/sacola.png) no-repeat top right;
     font-size: 14px;
@@ -5,18 +8,41 @@
     text-align: right;
     width: 140px;
 }
+.sacola {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #dcdcdc; /*alteraçoes feitas 08/03 para teste */
+    padding: 10px;
+}
 .menu-opcoes ul {
     font-size: 15px;
 }
-
-body {
-    color: #333333;
-    font-family: "Lucida Sans Unicode", "Lucida Grande" , sans-serif;
-    }
+.menu-opcoes a {
+    color: #003366;
+    text-transform: uppercase ; /*configuraca adicionada a partir daqui */
+    text-decoration: none;
+     /*fim*/
+}
+.menu-opcoes a:active {
+    background-color: gray;
+}
 .menu-opcoes ul li {
     display: inline;
     margin-left: 20px;
 }
+.menu-opcoes li {
+    margin-inline-end: 15px;
+}
+body {
+    color: #333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande" , sans-serif;
+    }
 .sacola {
     padding-top: 8px;
 }
@@ -41,34 +67,6 @@ body {
 .cssfade img.top:hover {
     opacity: 0;
 }
-header {
-    position: relative;
-}
-.menu-opcoes {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: #dcdcdc; /*alteraçoes feitas 08/03 para teste */
-    padding: 10px;
-}
-.menu-opcoes li {
-    margin-inline-end: 15px;
-}
-.sacola {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-.menu-opcoes a {
-    color: #003366;
-    text-transform: uppercase ; /*configuraca adicionada a partir daqui */
-    text-decoration: none;
-     /*fim*/
-}
-.menu-opcoes a:active {
-    background-color: gray;
-}
-
 .busca,
 .menu-departamentos {
     float: left;
@@ -81,7 +79,6 @@ header {
 .menu-departamentos {
     clear: left;      
 }
-
 .menu-departamentos li:hover { /*personalizando o menu com hover 08/03 */
     background-color: #dcdcdc;
 }
@@ -115,7 +112,6 @@ header {
     margin-top: 10px;
     padding-bottom: 10px;
 }
-
 .painel {
     margin: 175px 0 35px; /* margin alterado de 10 para 175px 0 35px p/ compatibiliadae */
     padding:  10px;
@@ -153,14 +149,19 @@ header {
 .painel a {
     color: #333;
     font-size: 14px;
+    font-family: 'Impact';
     text-align: center;
     text-decoration: none;
 }
 .novidades {
 background-color: #f5dcdc;
 }
-.novidades > h2 {
+.novidades > h2 { /*seletor de irmao */
     color: #333;
+}
+.painel button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
 }
 .mais-vendidos {
     background-color: #dcdcf5
