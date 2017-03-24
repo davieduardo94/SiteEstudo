@@ -1,3 +1,7 @@
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
 header {
     position: relative;
 }
@@ -12,6 +16,9 @@ header {
     position: absolute;
     top: 0;
     right: 0;
+}
+.sacola {
+    padding-top: 8px;
 }
 .menu-opcoes {
     position: absolute;
@@ -29,7 +36,7 @@ header {
     text-decoration: none;
      /*fim*/
 }
-.menu-opcoes a:active {
+.menu-opcoes a::active {
     background-color: gray;
 }
 .menu-opcoes ul li {
@@ -43,13 +50,6 @@ body {
     color: #333333;
     font-family: "Lucida Sans Unicode", "Lucida Grande" , sans-serif;
     }
-.sacola {
-    padding-top: 8px;
-}
-.container {
-    margin: 0 auto;
-    width: 940px;
-}
 .cssfade {
     position: relative;
     display: inline-block;
@@ -73,7 +73,7 @@ body {
     background-color: #dcdcdc;
     text-transform: uppercase;
     font-weight: bold;
-    margin-right: 10px;
+    margin: 13px 8px 0px 0px;
     width: 230px;    
 }
 .menu-departamentos {
@@ -99,25 +99,34 @@ body {
     color: #333333;
     text-decoration: none;
 }
+.menu-departamentos li ul {     /*escondendo os itens do menu blusas e camisas*/
+    display: none;
+}
+.menu-departamentos li:hover ul { /* mouse exibe os itens */
+    display: block;
+}
+.menu-departamentos li li a:before { /* adicionado icone de submenus*/
+    content: '\27A4';
+    padding-right: 3px;
+}
+.menu-departamentos {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.destaque {
+    margin-top: 5px;
+}
 .busca input{
     vertical-align: middle;
 }
 .busca input [type=search] {
     width: 170px;
 }
-.destaque {
-    margin-top: 10px;
-}
-.menu-departamentos {
-    margin-top: 10px;
-    padding-bottom: 10px;
-}
 .painel {
-    margin: 175px 0 35px; /* margin alterado de 10 para 175px 0 35px p/ compatibiliadae */
+    margin: 190px 0 35px; /* margin alterado de 10 para 175px 0 35px p/ compatibiliadae */
     padding:  10px;
     width: 445px;
     height: 420px; /* height adicionado para manter o layout */
-    
 }
 .painel li {
     display: inline-block;
@@ -125,20 +134,6 @@ body {
     width: 140px;
     margin: 2px;
     padding-bottom: 10px;
-    
-}
-.novidades {
-    float: left;
-    clear: left; /* adicionado para alinhar o paineil mais vendidos*/
-}
-.novidades img {
-    border-radius: 50%;
-}
-.mais-vendidos {
-    float: right;
-}
-.mais-vendidos > h2 {
-    color: #333;
 }
 .painel h2 {
     font-size: 24px;
@@ -154,17 +149,30 @@ body {
     text-decoration: none;
 }
 .novidades {
-background-color: #f5dcdc;
+    float: left;
+    clear: left; /* adicionado para alinhar o paineil mais vendidos*/
+}
+.novidades {
+    background-color: #f5dcdc;
 }
 .novidades > h2 { /*seletor de irmao */
     color: #333;
 }
-.painel button {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
+.novidades img {
+    border-radius: 50%;
+}
+.novidades {
+    box-shadow: 0px 0px 5px 5px #FFC0CB;
 }
 .mais-vendidos {
-    background-color: #dcdcf5
+    float: right;
+}
+.mais-vendidos > h2 {
+    color: #333;
+}
+.mais-vendidos {
+    background-color: #dcdcf5;
+    box-shadow: 0px 0px 5px 5px #E6E6FA;
 }
 .mais-vendidos img {
     border-radius: 80%;
@@ -200,6 +208,15 @@ footer {
     display: block;
     text-indent: -9999px;
 }
+.social {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+.social li {
+    float: left;
+    margin-left: 25px;
+}
 .social a[href*="facebook.com"] {
     background-image: url(../img/facebook.png);
 }
@@ -215,13 +232,4 @@ footer {
 }
 footer .container {
     position: relative;
-}
-.social {
-    position: absolute;
-    top: 12px;
-    right: 0;
-}
-.social li {
-    float: left;
-    margin-left: 25px;
 }

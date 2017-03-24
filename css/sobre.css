@@ -25,7 +25,7 @@
     margin: 5px auto auto 1px;;
     padding: 0;
     overflow: hidden;
-    background-color: #C0C0C0;
+    background-color: #A9A9A9;
 }
 .menu-opcoes li {
     float: left
@@ -77,6 +77,15 @@ h2 {
 p{
     text-indent: 15px;    
 }
+p:first-letter { 
+    font-weight: bold; /*pseudo classe first-letter*/
+}
+p:first-line {
+    font-variant: small-caps;
+}
+h1 + p {/*seletor de irmao adjacente retirando a identação do primeiro paragrafo*/
+    text-indent: 0;
+}
 figure { /*renderizando imagens*/
     padding: 0 45px;
     margin: 30px;
@@ -88,8 +97,7 @@ figcaption{ /*ajustando a legenda*/
     font-style: italic;
     margin-top: 10px;
 }
-#centro-distribuicao {
-    
+#centro-distribuicao {    
     margin-left: auto; 
     margin-right: auto;
     width: 550px;
