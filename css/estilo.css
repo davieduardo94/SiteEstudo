@@ -127,6 +127,7 @@ body {
     padding:  10px;
     width: 445px;
     height: 420px; /* height adicionado para manter o layout */
+    border-radius: 4px;
 }
 .painel li {
     display: inline-block;

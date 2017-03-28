@@ -38,29 +38,29 @@ header {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-right: 1px solid white;
 }
 .menu-opcoes li a:hover {
     background-color: #111;
 }
+.menu-opcoes button {
+    font-size: 14px;
+    text-align: center;
+    float: right;
+}
 
-/*
-.menu-opcoes ul {
-    font-size: 15px;
+
+.btn-info {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    float: right;
+    width: 130px;
+    height: 55px;
+    background-color: #C0C0C0;
 }
-.menu-opcoes ul li {
-    display: inline;
-    margin-left: 15px;
+.btn-info:hover {
+    background-color: #111;
 }
-.menu-opcoes {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: #dcdcdc;
-    padding: 10px;
-}
-.menu-opcoes li{
-    margin-inline-end: 15px;
-} */
 body {
     color: #333333;
     font-family: "Lucida Sans Unicode", "Lucida Grande" , sans-serif;
@@ -86,9 +86,8 @@ body {
 .test p:first-line{
     font-style: italic;
 }
-
 .test a:before {
-    content: '[';
+    content: '\26DF';
 }
 .test a:after {
     content: ']';
@@ -105,17 +104,19 @@ body {
 #crossfade {
     position: relative;
     height: 250px;
-    width: 300px;
+    width: 400px;
+    
 }
 #crossfade img {
+    border-image-slice: middle;
     position: absolute;
     left: 0;
     opacity: 1;
-    -webkit-transition: opacity 5s ease-in-out;
-    -moz-transition: opacity 5s ease-in-out;
-    -o-transition: opacity 5s ease-in-out;
-    -ms-transition: opacity 5s ease-in-out;
-    transition: opacity 5s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;  /* webkit - prefixos dos navegadores suportados (Chrome, Safari, IOS, Android*/
+    -moz-transition: opacity 1s ease-in-out;    /*  moz - prefixo do navegador suportado (Mozilla) */
+    -o-transition: opacity 1s ease-in-out;     /* o- - prefixo do navegador suportado (opera) */
+    -ms-transition: opacity 1s ease-in-out;   /*  ms- - prefixo do navegador suportado (internet Explorer) */
+    transition: opacity 1s ease-in-out;
 }
 #crossfade img.top:hover {
     opacity: 0;
@@ -140,4 +141,27 @@ body {
 }
 .navbar li a:hover {
     background-color: #111;
+}
+.dropbtn { /* começo dropdown */
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.linear {
+    background:  linear-gradient(white , blue, darkcyan);
+    float: left;
+}
+.gradiente {
+    background: linear-gradient(45deg, #f0f9ff 45%, #cbebff 47%, #a1dbff 70%);
+    float: left;
+}
+.radial {
+    background: linear-gradient(white, black, red);
+    float: left;
+    clear: right;
 }
