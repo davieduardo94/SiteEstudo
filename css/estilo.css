@@ -166,6 +166,10 @@ body {
 .novidades {
     box-shadow: 0px 0px 5px 5px #FFC0CB;
 }
+.novidades:hover { /*adicionando o hover ao box shadow */
+    box-shadow: 0px 0px 5px 5px #ec9090;
+    transition: box-shadow 0.2s;
+}
 .mais-vendidos {
     float: right;
 }
@@ -174,7 +178,11 @@ body {
 }
 .mais-vendidos {
     background-color: #dcdcf5;
-    box-shadow: 0px 0px 5px 5px #E6E6FA;
+    box-shadow: 0px 0px 5px 5px #CECEFF;
+}
+.mais-vendidos:hover {
+    box-shadow: 0px 0px 5px 5px #A2A2F2;
+    transition: box-shadow 0.2s;
 }
 .mais-vendidos img {
     border-radius: 80%;
