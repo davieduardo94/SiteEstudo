@@ -161,7 +161,7 @@ body {
     color: #333;
 }
 .novidades img {
-    border-radius: 50%;
+    border-radius: 50%; 
 }
 .novidades {
     box-shadow: 0px 0px 5px 5px #FFC0CB;
@@ -183,6 +183,9 @@ body {
 .mais-vendidos:hover {
     box-shadow: 0px 0px 5px 5px #A2A2F2;
     transition: box-shadow 0.2s;
+}
+.novidades li:hover { /*hover nos itens do painel novidades*/
+    transform: translate(0,-10px);
 }
 .mais-vendidos img {
     border-radius: 80%;
