@@ -155,7 +155,7 @@ body {
     clear: left; /* adicionado para alinhar o paineil mais vendidos*/
 }
 .novidades {
-    background-color: #f5dcdc;
+    background-color: #f0c8c8;
 }
 .novidades > h2 { /*seletor de irmao */
     color: #333;
