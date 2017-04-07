@@ -163,6 +163,9 @@ body {
 .novidades img {
     border-radius: 50%; 
 }
+.novidades li:hover { /*hover nos itens do painel novidades*/
+    transform: translate(0,-10px);
+}
 .novidades {
     box-shadow: 0px 0px 5px 5px #FFC0CB;
 }
@@ -184,11 +187,11 @@ body {
     box-shadow: 0px 0px 5px 5px #A2A2F2;
     transition: box-shadow 0.2s;
 }
-.novidades li:hover { /*hover nos itens do painel novidades*/
-    transform: translate(0,-10px);
-}
 .mais-vendidos img {
     border-radius: 80%;
+}
+.mais-vendidos li:hover { /*hover nos itens do painel mais vendidos*/
+    transform: translate(0,-10px);
 }
 .social ul {
     position: relative;
