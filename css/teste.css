@@ -150,8 +150,6 @@ body {
     border: none;
     cursor: pointer;
 }
-
-
 .linear {
     background:  linear-gradient(white , blue, darkcyan);
     float: left;
@@ -164,4 +162,14 @@ body {
     background: linear-gradient(white, black, red);
     float: left;
     clear: right;
+}
+.test2  {
+    position: relative;
+    top: 0;
+}
+.test2 img:hover {
+    top: 30px;
+}
+.test2 img:hover {
+    transition: top 2s;
 }
