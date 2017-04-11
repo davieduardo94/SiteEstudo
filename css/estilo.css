@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
     margin: 0 auto;
     width: 940px;
@@ -5,6 +6,8 @@
 header {
     position: relative;
 }
+=======
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
 .sacola {
     background:  url(../img/sacola.png) no-repeat top right;
     font-size: 14px;
@@ -12,6 +15,7 @@ header {
     text-align: right;
     width: 140px;
 }
+<<<<<<< HEAD
 .sacola {
     position: absolute;
     top: 0;
@@ -27,11 +31,14 @@ header {
     background-color: #dcdcdc; /*alteraçoes feitas 08/03 para teste */
     padding: 10px;
 }
+=======
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
 .menu-opcoes ul {
     font-size: 15px;
 }
 .menu-opcoes a {
     color: #003366;
+<<<<<<< HEAD
     text-transform: uppercase ; /*configuraca adicionada a partir daqui */
     text-decoration: none;
      /*fim*/
@@ -39,10 +46,18 @@ header {
 .menu-opcoes a::active {
     background-color: gray;
 }
+=======
+}
+body {
+    color: #333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande" , sans-serif;
+    }
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
 .menu-opcoes ul li {
     display: inline;
     margin-left: 20px;
 }
+<<<<<<< HEAD
 .menu-opcoes li {
     margin-inline-end: 15px;
 }
@@ -66,6 +81,35 @@ body {
 }
 .cssfade img.top:hover {
     opacity: 0;
+=======
+.sacola {
+    padding-top: 8px;
+}
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+header {
+    position: relative;
+}
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    margin: 10px 10px;
+}
+.sacola {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.menu-opcoes a {
+    color: #003366;
+    text-transform: uppercase; /*configuraca adicionada a partir daqui */
+    text-decoration: none;
+    background-color: #dcdcf5; /*fim*/
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
 }
 .busca,
 .menu-departamentos {
@@ -73,18 +117,25 @@ body {
     background-color: #dcdcdc;
     text-transform: uppercase;
     font-weight: bold;
+<<<<<<< HEAD
     margin: 13px 8px 0px 0px;
+=======
+    margin-right: 10px;
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
     width: 230px;    
 }
 .menu-departamentos {
     clear: left;      
 }
+<<<<<<< HEAD
 .menu-departamentos li:hover { /*personalizando o menu com hover 08/03 */
     background-color: #dcdcdc;
 }
 .menu-departamentos li:active {
     background-color: gray;
 }
+=======
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
 .busca h2,
 .busca form,
 .menu-departamentos h2{
@@ -99,6 +150,7 @@ body {
     color: #333333;
     text-decoration: none;
 }
+<<<<<<< HEAD
 .menu-departamentos li ul {     /*escondendo os itens do menu blusas e camisas*/
     display: none;
 }
@@ -108,11 +160,22 @@ body {
 .menu-departamentos li li a:before { /* adicionado icone de submenus*/
     content: '\27A4';
     padding-right: 3px;
+=======
+.busca input{
+    vertical-align: middle;
+}
+.busca input [type=search] {
+    width: 170px;
+}
+.destaque {
+    margin-top: 10px;
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
 }
 .menu-departamentos {
     margin-top: 10px;
     padding-bottom: 10px;
 }
+<<<<<<< HEAD
 .destaque {
     margin-top: 5px;
 }
@@ -128,6 +191,13 @@ body {
     width: 445px;
     height: 420px; /* height adicionado para manter o layout */
     border-radius: 10px;
+=======
+
+.painel {
+    margin: 10px 0;
+    padding:  10px;
+    width: 445px;
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
 }
 .painel li {
     display: inline-block;
@@ -136,21 +206,38 @@ body {
     margin: 2px;
     padding-bottom: 10px;
 }
+<<<<<<< HEAD
+=======
+.novidades {
+    float: left;
+}
+.mais-vendidos {
+    float: right;
+}
+
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
 .painel h2 {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
+<<<<<<< HEAD
     text-shadow: 3px 3px 2px gray;
+=======
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
 }
 .painel a {
     color: #333;
     font-size: 14px;
+<<<<<<< HEAD
     font-family: 'Impact';
+=======
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
     text-align: center;
     text-decoration: none;
 }
 .novidades {
+<<<<<<< HEAD
     float: left;
     clear: left; /* adicionado para alinhar o paineil mais vendidos*/
 }
@@ -192,14 +279,29 @@ body {
 }
 .mais-vendidos li:hover { /*hover nos itens do painel mais vendidos*/
     transform: translate(0,-10px);
+=======
+background-color: #f5dcdc;
+}
+.mais-vendidos {
+    background-color: #dcdcf5
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
 }
 .social ul {
     position: relative;
 }
+<<<<<<< HEAD
 .social li {    
     float: left;
     padding: 5px;
     margin: 10px;
+=======
+.social li {
+    
+    float: left;
+    padding: 5px;
+    margin: 10px;
+    
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
 }
 .facebook {
     /*tamanho do elemento = imagem */
@@ -224,6 +326,7 @@ footer {
     display: block;
     text-indent: -9999px;
 }
+<<<<<<< HEAD
 .social {
     position: absolute;
     top: 12px;
@@ -233,6 +336,8 @@ footer {
     float: left;
     margin-left: 25px;
 }
+=======
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
 .social a[href*="facebook.com"] {
     background-image: url(../img/facebook.png);
 }
@@ -249,3 +354,15 @@ footer {
 footer .container {
     position: relative;
 }
+<<<<<<< HEAD
+=======
+.social {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+.social li {
+    float: left;
+    margin-left: 25px;
+}
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913

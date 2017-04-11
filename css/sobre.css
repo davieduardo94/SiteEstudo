@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .container {
     margin: 0 auto;
@@ -58,6 +59,39 @@
 }
 .btn-info:hover {
     background-color: #111;
+=======
+.sacola{
+    background: url(../img/sacola.png) no-repeat top right;
+    font-size: 14px;
+    padding-right: 35px;
+    text-align: right;
+    width: 140px;
+    padding-top: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+header{
+    position: relative;
+}
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.menu-opcoes ul li{
+    display: inline;
+    margin-left: 20px;
+    font-size: 15px;
+    /*codigo do menu de opcoes*/
+}
+.menu-cabecalho{
+    color: #003366;
+}
+.container {
+    margin: 0 auto;
+    width: 940px;
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
 }
 body {
     color: #333333;
@@ -67,9 +101,14 @@ body {
     width: 940px;
 }
 h1 {
+<<<<<<< HEAD
     /*background-image: url(../img/sobre-background.jpg);*/
     padding: 5px;
     margin: inherit;
+=======
+    background-image: url(../img/sobre-background.jpg);
+    padding: 10px;
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
 }
 
 h2 {
@@ -79,6 +118,7 @@ h2 {
 p{
     text-indent: 15px;    
 }
+<<<<<<< HEAD
 p:first-letter { 
     font-weight: bold; /*pseudo classe first-letter*/
 }
@@ -88,6 +128,8 @@ p:first-line {
 h1 + p {/*seletor de irmao adjacente retirando a identação do primeiro paragrafo*/
     text-indent: 0;
 }
+=======
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
 figure { /*renderizando imagens*/
     padding: 0 45px;
     margin: 30px;
@@ -99,7 +141,12 @@ figcaption{ /*ajustando a legenda*/
     font-style: italic;
     margin-top: 10px;
 }
+<<<<<<< HEAD
 #centro-distribuicao {    
+=======
+#centro-distribuicao {
+    
+>>>>>>> 5666aa5dd422dc08ff4e226f315fee009bdce913
     margin-left: auto; 
     margin-right: auto;
     width: 550px;
